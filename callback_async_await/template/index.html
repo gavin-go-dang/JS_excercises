@@ -5,26 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question Anwering</title>
-    <link rel="stylesheet" href="/home/gavindang/JS/static/css/style.css" class="css">
+    <link rel="stylesheet" href="../css/style.css" class="css">
 </head>
 <body>
     <h1>Question Answering</h1>
-    <form class="input-QA">
+    <form class="input-QA" id ="form-QA-input">
         <label for="fname">Question:</label><br><br>
-        <input class="input-QA__input--question" id="fname" name="question"><br><br>
+        <input class="input-QA__input--question" id="question" name="question" value="How many peopleo on the Room?"><br><br>
         <label for="lname">Context:</label>
-        <input class="input-QA__input--context" type="text" name="context"><br><br>
+        <input class="input-QA__input--context" id="context" type="text" name="context" value="there are 3 people in Room"><br><br>
         <input class= "QA-input__button--submit" type="submit" value="Submit">
     </form>
 
 
 
+        
+    <div class="answer-container">
+        <div class="answer__title">Answer: </h3>
+        <div class="answer__context" id="answer_text"></div>
+    </div>
+
+
     <script src="/home/gavindang/JS/static/js/main.js">
     </script>
-    
-    <div class="answer">
-        <h3 class="answer__title">Answer:</h3>
-        <input type="text" class="answer__context">
-    </div>
+
 </body>
 </html>
